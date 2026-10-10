@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kylian Mbappé - Sitio Unificado</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #140a98;
+            padding: 15px 20px;
+            color: #ffffff;
+            transition: background-color 0.3s ease;
+        }
+
+        .logo-pequeno {
+            width: 350px;
+            max-width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 6px;
+        }
+
+        .barra-navegacion {
+            display: flex;
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        .boton-nav {
+            text-decoration: none;
+            color: #140a98;
+            background-color: #ffffff;
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+            transition: all 0.3s ease;
+        }
+
+        .boton-nav:hover,
+        .boton-nav.activo {
+            background-color: #e2b918;
+            color: #000000;
+        }
+
+        main {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+            min-height: 400px;
+        }
+
+        aside {
+            width: 30%;
+            background-color: #ffffff;
+            padding: 20px;
+            box-sizing: border-box;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        section {
+            width: 70%;
+            background-color: #ffffff;
+            padding: 20px;
+            box-sizing: border-box;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .bloque-anuncio {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border: 1px dashed #ccc;
+            text-align: center;
+            border-radius: 6px;
+        }
+
+        .bloque-anuncio img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .contenido-seccion {
+            display: none;
+        }
+
+        .contenido-seccion.activa {
+            display: flex;
+            gap: 20px;
+            width: 100%;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #222222;
+            color: #ffffff;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header id="cabecera-principal">
+        <div>
+            <h1 style="margin: 0;">Mi Sitio Web - Kylian Mbappé</h1>
+            <nav class="barra-navegacion">
+                <button class="boton-nav activo" onclick="mostrarSeccion('mundial')">Mundial 2018</button>
+                <button class="boton-nav" onclick="mostrarSeccion('real-madrid')">Real Madrid</button>
+                <button class="boton-nav" onclick="mostrarSeccion('primer-equipo')">Su primer equipo</button>
+            </nav>
+        </div>
+        <img id="logo-header" src="https://imagenes.elpais.com/resizer/v2/V6OJE3IR7EQCUAX43OCZRR4LXI.jpg?auth=0e34a1bdecd6b265d5022bf45802cbcf5d877910db7c037dc64b096b95b2263b&width=1000" alt="Logo de Mi Sitio Web" class="logo-pequeno">
+    </header>
+
+    <main>
+        <!-- SECCIÓN 1: MUNDIAL 2018 -->
+        <div id="seccion-mundial" class="contenido-seccion activa">
+            <aside>
+                <p>Mbappé ha construido un legado histórico absoluto en la Copa Mundial de Fútbol, convirtiéndose en el máximo goleador de todos los tiempos en los Mundiales con un total de 22 goles.</p>
+                <div class="bloque-anuncio">
+                    <a href="https://ejemplo.com" target="_blank" rel="noopener">
+                        <img src="https://nmp.about.nike.com/about/prod/cf68f541-fc92-4373-91cb-086ae0fe2f88/001-nike-logos-swoosh-black.jpg?m=eyJlZGl0cyI6eyJqcGVnIjp7InF1YWxpdHkiOjEwMH0sIndlYnAiOnsicXVhbGl0eSI6MTAwfSwiZXh0cmFjdCI6eyJsZWZ0IjowLCJ0b3AiOjAsIndpZHRoIjo1MDAwLCJoZWlnaHQiOjI4MTN9LCJyZXNpemUiOnsid2lkdGgiOjM4NH19fQ%3D%3D&s=b228d00d677b1bd088cc34bf93e3b6c35d3cdc864096438b5413bb74daf261c1" alt="Anuncio Nike">
+                    </a>
+                </div>
+            </aside>
+            <section>
+                <article>
+                    <h2>La participación de Kylian Mbappé en el Mundial de Rusia 2018 fue el torneo que lo consagró como una superestrella del fútbol global con tan solo 19 años.</h2>
+                    <p>Es un futbolista profesional francés nacido el 20 de diciembre de 1998 en París. Se desempeña como delantero en el Real Madrid de España y es el capitán de la Selección de Francia.</p>
+                </article>
+            </section>
+        </div>
+
+        <!-- SECCIÓN 2: REAL MADRID -->
+        <div id="seccion-real-madrid" class="contenido-seccion">
+            <aside>
+                <h3>Etapa en el Real Madrid</h3>
+                <p>Desde la llegada de Mbappé, el Madrid ha afrontado importantes retos competitivos en LaLiga y la Champions League.</p>
+                <div class="bloque-anuncio">
+                    <a href="https://ejemplo.com" target="_blank" rel="noopener">
+                        <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Adidas_Logo.svg/960px-Adidas_Logo.svg.png?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=thumbnail" alt="Anuncio Adidas">
+                    </a>
+                </div>
+            </aside>
+            <section>
+                <article>
+                    <h2>Máximo goleador en las competiciones más famosas en la actualidad</h2>
+                    <p>Es un futbolista francés que juega como delantero en el Real Madrid C. F. de la Primera División de España.</p>
+                </article>
+            </section>
+        </div>
+
+        <!-- SECCIÓN 3: PRIMER EQUIPO (AS MÓNACO) -->
+        <div id="seccion-primer-equipo" class="contenido-seccion">
+            <aside>
+                <h3>La etapa de Kylian Mbappé en el AS Mónaco (2015-2017) fue el mágico inicio de su carrera, donde pasó de ser un juvenil desconocido a la promesa más valiosa y codiciada del fútbol mundial con tan solo 18 años.</h3>
+                <div class="bloque-anuncio">
+                    <a href="https://ejemplo.com" target="_blank" rel="noopener">
+                        <img src="https://nmp.about.nike.com/about/prod/cf68f541-fc92-4373-91cb-086ae0fe2f88/001-nike-logos-swoosh-black.jpg?m=eyJlZGl0cyI6eyJqcGVnIjp7InF1YWxpdHkiOjEwMH0sIndlYnAiOnsicXVhbGl0eSI6MTAwfSwiZXh0cmFjdCI6eyJsZWZ0IjowLCJ0b3AiOjAsIndpZHRoIjo1MDAwLCJoZWlnaHQiOjI4MTN9LCJyZXNpemUiOnsid2lkdGgiOjM4NH19fQ%3D%3D&s=b228d00d677b1bd088cc34bf93e3b6c35d3cdc864096438b5413bb74daf261c1" alt="Anuncio Nike">
+                    </a>
+                </div>
+            </aside>
+            <section>
+                <article>
+                    <h2>Dejó una marca imborrable en el fútbol profesional. Durante sus dos temporadas con el primer equipo (2015-2017), el astro francés firmó un total de 27 goles y 16 asistencias en 60 partidos oficiales, promediando una participación directa de gol cada 88 minutos.</h2>
+                    <p>Mbappé en el Mónaco era el de un extremo izquierdo reconvertido a segundo delantero junto a Radamel Falcao. El 85% de sus goles fueron con el pie derecho, apoyándose en su clásica jugada: enganchar hacia adentro desde la izquierda y disparar al segundo poste, o aprovechar los pases al espacio para ganarle a los defensas por pura velocidad.</p>
+                </article>
+            </section>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>Pie de página - © Sitio Unificado de Kylian Mbappé</p>
+    </footer>
+
+    <script>
+        function mostrarSeccion(seccion) {
+            // Ocultar todas las secciones
+            const secciones = document.querySelectorAll('.contenido-seccion');
+            secciones.forEach(sec => sec.classList.remove('activa'));
+
+            // Quitar clase activa a todos los botones
+            const botones = document.querySelectorAll('.boton-nav');
+            botones.forEach(btn => btn.classList.remove('activo'));
+
+            // Mostrar la sección seleccionada
+            if (seccion === 'mundial') {
+                document.getElementById('seccion-mundial').classList.add('activa');
+                botones[0].classList.add('activo');
+            } else if (seccion === 'real-madrid') {
+                document.getElementById('seccion-real-madrid').classList.add('activa');
+                botones[1].classList.add('activo');
+            } else if (seccion === 'primer-equipo') {
+                document.getElementById('seccion-primer-equipo').classList.add('activa');
+                botones[2].classList.add('activo');
+            }
+        }
+    </script>
+
+</body>
+
+</html>
